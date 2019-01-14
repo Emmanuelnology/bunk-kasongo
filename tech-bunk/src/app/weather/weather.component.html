@@ -1,6 +1,28 @@
-<p *ngIf="(weather | async)">
-  {{ ( weather.id | async)?.temp }}
-</p>
-<p *ngIf="error">
-  It is snowing.
-</p>
+<div class="body">
+  <h1>Weather</h1>
+
+  <p>
+    {{ ( weather | async)?.name }}
+  </p>
+
+  <p>
+    {{ ( weather | async)?.main.temp }}
+  </p>
+
+  <p>
+    {{ ( weather | async)?.main.humidity }}
+  </p>
+
+  <p>
+    {{ ( weather | async)?.main.temp_min }}
+  </p>
+
+  <p>
+    {{ ( weather | async)?.main.temp_max }}
+  </p>
+
+  <p *ngIf="error">
+    It is snowing.
+  </p>
+
+</div>

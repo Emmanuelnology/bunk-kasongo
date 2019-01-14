@@ -13,20 +13,24 @@ import { switchMap, catchError } from 'rxjs/operators';
 export class WeatherComponent implements OnInit {
   private error = false;
   private weather:Observable<IWeather>;
-  constructor(private http: HttpClient, private route: ActivatedRoute) { }
+  constructor(private http: HttpClient) { }
 
   public ngOnInit() {
-    this.weather = this.route.params
-      .pipe(switchMap((params) => {
-        const id = params['id'];
-        return this.weather = this.http.get<IWeather>("https://samples.openweathermap.org/data/2.5/group?id=2643744,4749005,4219762&units=metric&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575")
-          .pipe(            
-            catchError((error: HttpErrorResponse) => {
-              this.error = true;
-              return new Observable<IWeather>();
-        }),
-      );
-    }));
+    this.weather = this.http.get<IWeather>("http://api.openweathermap.org/data/2.5/weather?id=2643744&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575");
+    // this.weather.subscribe((response) => {
+    //   return console.log(response);
+    // });
+    // this.weather = this.route.params
+    //   .pipe(switchMap((params) => {
+    //     const id = params['id'];
+    //     return this.weather = this.http.get<IWeather>("https://samples.openweathermap.org/data/2.5/group?id=2643744,4749005,4219762&units=metric&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575/")
+    //       .pipe(            
+    //         catchError((error: HttpErrorResponse) => {
+    //           this.error = true;
+    //           return new Observable<IWeather>();
+    //     }),
+    //   );
+    // }));
   }
 
 }

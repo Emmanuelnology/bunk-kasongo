@@ -1,0 +1,9 @@
+.body {
+    background-image: url('http://www.blueskyamusements.com/images/site/template/bkg-sky.jpg');
+    background-position: cover;
+    font-style: italic;
+}
+
+h1 {
+    color: darkblue;
+}

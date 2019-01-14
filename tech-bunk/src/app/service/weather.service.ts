@@ -10,7 +10,7 @@ export interface IWeather {
 }
 
 export interface IWeatherAPI {
-  all: IWeather[];
+  main: IWeather[];
 }
 
 @Injectable({

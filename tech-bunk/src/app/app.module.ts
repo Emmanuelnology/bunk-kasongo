@@ -12,13 +12,15 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AppComponent } from './app.component';
 import { WeatherComponent } from './weather/weather.component';
 import { WeatherService } from './service/weather.service';
-import { WeathersComponent } from './weathers/weathers.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { FootballComponent } from './football/football.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponent,
-    WeathersComponent
+    QuizComponent,
+    FootballComponent
   ],
   imports: [
     BrowserModule,
@@ -28,8 +30,7 @@ import { WeathersComponent } from './weathers/weathers.component';
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule, // imports firebase/storage only needed for storage features
     RouterModule.forRoot([
-      { path: "weathers", component:  WeathersComponent },
-      { path: "weathers/:id", component:  WeatherComponent },
+      { path: "weather", component:  WeatherComponent },
     ]),
   ],
   providers: [],
