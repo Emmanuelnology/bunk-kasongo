@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 
 export interface IWeather {
-  _id: number;
+  id: number;
   temp: number;
   humidity: number;
   temp_min: number;

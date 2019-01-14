@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface IWeather {
-  _id: number;
+  id: number;
   temp: number;
   humidity: number;
   temp_min: number;
@@ -24,7 +24,7 @@ export class WeathersComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   public ngOnInit() {
-    this.weathers = this.http.get<IWeatherAPI>("http://api.openweathermap.org/data/2.5/weather?id=2643744&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575");
+    this.weathers = this.http.get<IWeatherAPI>("https://samples.openweathermap.org/data/2.5/group?id=2643744,4749005,4219762&units=metric&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575");
   }
 
 }

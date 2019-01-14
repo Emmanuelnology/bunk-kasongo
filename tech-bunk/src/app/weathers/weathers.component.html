@@ -1,6 +1,6 @@
 <ul *ngFor= "let weather of (weathers | async)?.all">
   <li>
-    {{ weather.temp }} 
-    <a [routerLink]="['/city', city._id]">Learn More</a>
+    {{ weather.id }} 
+    <a [routerLink]="['/weathers', weather.id]">Check Weather</a>
   </li>
 </ul>
