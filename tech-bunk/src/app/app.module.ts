@@ -12,11 +12,13 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AppComponent } from './app.component';
 import { WeatherComponent } from './weather/weather.component';
 import { WeatherService } from './service/weather.service';
+import { WeathersComponent } from './weathers/weathers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherComponent
+    WeatherComponent,
+    WeathersComponent
   ],
   imports: [
     BrowserModule,
