@@ -1,3 +1,6 @@
-<p>
-  weather works!
+<p *ngIf="(weather | async)">
+  {{ ( weather | async)?.temp }}
+</p>
+<p *ngIf="error">
+  It is snowing.
 </p>

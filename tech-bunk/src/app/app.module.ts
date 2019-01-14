@@ -28,7 +28,8 @@ import { WeathersComponent } from './weathers/weathers.component';
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule, // imports firebase/storage only needed for storage features
     RouterModule.forRoot([
-      { path: "weather", component:  WeatherComponent },
+      { path: "weathers", component:  WeathersComponent },
+      { path: "weathers/:id", component:  WeatherComponent },
     ]),
   ],
   providers: [],

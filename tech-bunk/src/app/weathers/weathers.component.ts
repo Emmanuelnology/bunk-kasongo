@@ -20,10 +20,11 @@ export interface IWeatherAPI {
   styleUrls: ['./weathers.component.css']
 })
 export class WeathersComponent implements OnInit {
+  private weathers: Observable<IWeatherAPI>;
+  constructor(private http: HttpClient) { }
 
-  constructor() { }
-
-  ngOnInit() {
+  public ngOnInit() {
+    this.weathers = this.http.get<IWeatherAPI>("http://api.openweathermap.org/data/2.5/weather?id=2643744&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575");
   }
 
 }
