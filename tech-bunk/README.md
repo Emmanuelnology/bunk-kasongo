@@ -1,2 +1,0 @@
-# bunk-kasongo
-Bunk Test
