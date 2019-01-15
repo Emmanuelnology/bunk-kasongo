@@ -32,6 +32,7 @@ import { FootballComponent } from './football/football.component';
     RouterModule.forRoot([
       { path: "weather", component:  WeatherComponent },
       { path: "quiz", component:  QuizComponent },
+      { path: "football", component:  FootballComponent }
     ]),
   ],
   providers: [],

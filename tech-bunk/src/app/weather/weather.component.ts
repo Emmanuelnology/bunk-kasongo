@@ -3,6 +3,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { IWeather } from '../service/weather.service';
 import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { switchMap, catchError } from 'rxjs/operators';
 
 @Component({
