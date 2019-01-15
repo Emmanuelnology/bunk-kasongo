@@ -1,10 +1,28 @@
 .body {
     background-image: url('http://www.blueskyamusements.com/images/site/template/bkg-sky.jpg');
     background-position: cover;
+    background-repeat: no-repeat;
+    height: 250%;
     font-style: italic;
+}
+
+.jumbotron {
+    background-color: lightblue;
 }
 
 h1 {
     color: darkblue;
-    font-size: 3.5em;
+    font-size: 3em;
+}
+
+.station {
+    display: flex; 
+}
+
+.london, .bristol,.rome {
+    flex: 1;
+}
+
+p {
+    color: darkblue;
 }
