@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./football.component.css']
 })
 export class FootballComponent implements OnInit {
+  
 
   constructor() { }
 

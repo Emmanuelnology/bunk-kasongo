@@ -1,0 +1,33 @@
+form {
+    background-color: rgb(147, 180, 201);
+    height: 100%;
+    margin-bottom: 0;
+    bottom: 0;
+    padding-bottom: 0;
+    font-style: italic;
+}
+
+.jumbotron {
+    background-image: url('https://www.underconsideration.com/brandnew/archives/uefa_champions_league_00.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    color: rgb(198, 198, 235);
+    font-size: 3em;
+}
+
+p {
+    color: rgb(170, 170, 197);
+    font-size: 2em;
+}
+
+label {
+    color: darkblue;
+}
+
+.submit {
+    text-align: center;
+}
