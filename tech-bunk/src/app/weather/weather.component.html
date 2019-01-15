@@ -1,28 +1,68 @@
 <div class="body">
   <h1>Weather</h1>
+  <div class="london">
+    <p>
+      {{ ( london | async)?.name }}
+    </p>
 
-  <p>
-    {{ ( weather | async)?.name }}
-  </p>
+    <p>
+      {{ ( london | async)?.main.temp }}
+    </p>
 
-  <p>
-    {{ ( weather | async)?.main.temp }}
-  </p>
+    <p>
+      {{ ( london | async)?.main.humidity }}
+    </p>
 
-  <p>
-    {{ ( weather | async)?.main.humidity }}
-  </p>
+    <p>
+      {{ ( london | async)?.main.temp_min }}
+    </p>
 
-  <p>
-    {{ ( weather | async)?.main.temp_min }}
-  </p>
+    <p>
+      {{ ( london | async)?.main.temp_max }}
+    </p>
+  </div>
 
-  <p>
-    {{ ( weather | async)?.main.temp_max }}
-  </p>
+  <div class="bristol">
+    <p>
+      {{ ( bristol | async)?.name }}
+    </p>
 
-  <p *ngIf="error">
-    It is snowing.
-  </p>
+    <p>
+      {{ ( bristol | async)?.main.temp }}
+    </p>
 
+    <p>
+      {{ ( bristol | async)?.main.humidity }}
+    </p>
+
+    <p>
+      {{ ( bristol | async)?.main.temp_min }}
+    </p>
+
+    <p>
+      {{ ( bristol | async)?.main.temp_max }}
+    </p>
+  </div>
+
+  <div class="rome">
+    <p>
+      {{ ( rome | async)?.name }}
+    </p>
+
+    <p>
+      {{ ( rome | async)?.main.temp }}
+    </p>
+
+    <p>
+      {{ ( rome | async)?.main.humidity }}
+    </p>
+
+    <p>
+      {{ ( rome | async)?.main.temp_min }}
+    </p>
+
+    <p>
+      {{ ( rome | async)?.main.temp_max }}
+    </p>
+  </div>
 </div>

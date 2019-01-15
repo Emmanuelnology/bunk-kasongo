@@ -12,11 +12,15 @@ import { switchMap, catchError } from 'rxjs/operators';
 })
 export class WeatherComponent implements OnInit {
   private error = false;
-  private weather:Observable<IWeather>;
+  private london:Observable<IWeather>;
+  private bristol:Observable<IWeather>;
+  private rome:Observable<IWeather>;
   constructor(private http: HttpClient) { }
 
   public ngOnInit() {
-    this.weather = this.http.get<IWeather>("http://api.openweathermap.org/data/2.5/weather?id=2643744&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575");
+    this.london = this.http.get<IWeather>("http://api.openweathermap.org/data/2.5/weather?id=2643744&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575");
+    this.bristol = this.http.get<IWeather>("http://api.openweathermap.org/data/2.5/weather?id=4749005&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575");
+    this.rome = this.http.get<IWeather>("http://api.openweathermap.org/data/2.5/weather?id=4219762&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575");
     // this.weather.subscribe((response) => {
     //   return console.log(response);
     // });
