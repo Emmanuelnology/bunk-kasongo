@@ -31,6 +31,7 @@ import { FootballComponent } from './football/football.component';
     AngularFireStorageModule, // imports firebase/storage only needed for storage features
     RouterModule.forRoot([
       { path: "weather", component:  WeatherComponent },
+      { path: "quiz", component:  QuizComponent },
     ]),
   ],
   providers: [],

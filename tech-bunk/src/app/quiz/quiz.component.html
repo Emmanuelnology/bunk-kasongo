@@ -1,3 +1,61 @@
-<p>
-  quiz works!
-</p>
+<form class="needs-validation" novalidate>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+        <h1 class="display-7"><i class="fa fa-question" aria-hidden="true">Quiz</i></h1>
+        <p class="lead">Time to test your intelligence !</p>
+      </div>
+    </div>
+  <div class="form-row">
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationCustom012">What is your favourite football team ?</label>
+      <input type="text" class="form-control" id="validationCustom012" placeholder="PSG" value="PSG ?"
+        required>
+      <div class="valid-feedback">
+        Fair-play!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationCustom022">What is the capital of Belgium</label>
+      <input type="text" class="form-control" id="validationCustom022" value="Miami ?" required>
+      <div class="valid-feedback">
+        Fair-play!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationCustomUsername2">Is it snowing ?</label>
+      <input type="text" class="form-control" id="validationCustomUsername2" aria-describedby="inputGroupPrepend2"
+        required>
+      <div class="invalid-feedback">
+        Please tell us if it is snowing.
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationCustom032">1 + 1 = ?</label>
+      <input type="number" class="form-control" id="validationCustom032" max-length="2" required>
+      <div class="invalid-feedback">
+        Please find the result.
+      </div>
+    </div>
+    <div class="col-md-5 mb-3 md-form">
+      <label for="validationCustom042">Who is the lucky President of the United States of America</label>
+      <input type="text" class="form-control" id="validationCustom042" required>
+      <div class="invalid-feedback">
+        Please tell us the name of Donald.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3 md-form">
+        <label for="validationCustom042">Is Brexit happening ?</label>
+        <input type="radio" name="yes" value="yes"class="form-control" id="validationCustom042" required style="height: 1.5em;">
+        <div>Yes</div>
+        <input type="radio" name="yes" value="no" class="form-control" id="validationCustom042" required style="height: 1.5em;">No
+        <div class="invalid-feedback">
+          Please tell us if the UK is leaving Europe.
+        </div>
+    </div>
+  </div>
+  <div class="submit">
+    <button class="btn btn-primary btn-rounded" type="submit">Submit Quiz</button>
+  </div>
+</form>
