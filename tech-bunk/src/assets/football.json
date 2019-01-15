@@ -1,4 +1,4 @@
-let footballers = [
+[
     {
       "id": 3176,
       "name": "Matthias Ginter",

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { footballers } from './assets/football.json';
+// import { footballers } from './assets/football.json';
 
 export interface IFootballer {
   id: number;
