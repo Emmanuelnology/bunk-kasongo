@@ -19,6 +19,10 @@ h1 {
     display: flex; 
 }
 
+.card-body {
+    background-color: rgb(224, 243, 243);
+}
+
 .london, .bristol,.rome {
     flex: 1;
 }
