@@ -19,9 +19,9 @@ export class WeatherComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   public ngOnInit() {
-    this.london = this.http.get<IWeather>("http://api.openweathermap.org/data/2.5/weather?id=2643744&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575");
-    this.bristol = this.http.get<IWeather>("http://api.openweathermap.org/data/2.5/weather?id=4749005&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575");
-    this.rome = this.http.get<IWeather>("http://api.openweathermap.org/data/2.5/weather?id=4219762&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575");
+    this.london = this.http.get<IWeather>("http://api.openweathermap.org/data/2.5/weather?id=2643744&units=metric&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575");
+    this.bristol = this.http.get<IWeather>("http://api.openweathermap.org/data/2.5/weather?id=4749005&units=metric&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575");
+    this.rome = this.http.get<IWeather>("http://api.openweathermap.org/data/2.5/weather?id=4219762&units=metric&APPID=f4bbeb8ec1a8fb95591f2cf112aaa575");
     // this.weather.subscribe((response) => {
     //   return console.log(response);
     // });
